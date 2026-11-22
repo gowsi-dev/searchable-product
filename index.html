@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <title>Shopify - Product Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shopify</h1>
+    <main>
+        <aside>
+            <h3>Search</h3>
+
+            <input type="search" id="search" placeholder="Search products...">
+
+            <hr>
+
+            <h3>Category</h3>
+
+            <label><input type="checkbox" name="category" value="1"> Electronics</label>
+            <label><input type="checkbox" name="category" value="2"> Fashion</label>
+            <label><input type="checkbox" name="category" value="3"> Home & Living</label>
+
+            <hr>
+
+            <h3>Price Range</h3>
+
+            <label><input type="radio" name="price" checked value="all"> All</label>
+            <label><input type="radio" name="price" value ="1000"> Under ₹1,000</label>
+            <label><input type="radio" name="price" value="5000"> ₹1,000 – ₹5,000</label>
+            <label><input type="radio" name="price" value="5001"> Above ₹5,000</label>
+
+            <hr>
+
+            <h3>Rating</h3>
+
+            <label><input type="radio" name="rating" value="all"> All</label>
+            <label><input type="radio" name="rating" value="4"> 4+ Stars</label>
+            <label><input type="radio" name="rating" value="3"> 3+ Stars</label>
+        </aside>
+
+        <!-- Products -->
+        <section class="catalogue">
+
+            <div class="catalogue-header">
+                <p id="count"></p>
+
+            </div>
+
+            <div class="products" id="products">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
